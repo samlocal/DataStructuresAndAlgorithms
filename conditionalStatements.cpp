@@ -32,4 +32,19 @@ int main()
     }
 
 
+
+    //Conditional Statement Practise Qestion
+    //Input is a Character
+    //Output is UpperCase or LowerCase or Numeric
+
+    char ch;
+    cout<<"Enter a characyter: ";
+    cin>>ch;
+
+    if(ch>='a' && ch<='z') cout<<ch<<" is LowerCase\n";
+    else if(ch>='A' && ch<='Z') cout<<ch<<"is UpperCase\n";
+    else cout<<ch<<" is Numeric\n";
+
+
+
 }
