@@ -21,7 +21,7 @@ int main()
     while(column<=n)
     {
         char ch='A'+row+column-2;
-        cout<<ch;
+        cout<<ch;   
         column=column+1;
     }
     row=row+1;
