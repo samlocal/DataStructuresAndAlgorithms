@@ -1,5 +1,14 @@
-  // for(int i=1;i<=n;i++)
+ // switch(num)
     // {
-    //     if(i==5) break;
-    //     cout<<i<<" ";
+    //     case 1 : cout<<"One\n";
+    //              break;
+    //     case 2 : cout<<"Two\n";
+    //              break;
+    //     case 3 : cout<<"Three\n";
+    //              break;
+    //     case 4 : cout<<"Four\n";
+    //              break;
+    //     case 5 : cout<<"Five\n";
+    //              break;
+    //     default : cout<<"Enterf from 1 to 5\n";
     // }
