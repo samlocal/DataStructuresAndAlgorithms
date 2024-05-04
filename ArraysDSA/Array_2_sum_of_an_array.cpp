@@ -13,9 +13,6 @@ int arraySum(int arr[],int size)
     return sum;
 }
 
-
-
-
 int main()
 {
     int size;
