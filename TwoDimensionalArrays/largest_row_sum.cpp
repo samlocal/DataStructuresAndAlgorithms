@@ -15,7 +15,6 @@ int largestRowWiseSum(int arr[][4] , int row,int col)
             maxi=sum;
         }
     }
-    return maxi;
 }
 int main()
 {
