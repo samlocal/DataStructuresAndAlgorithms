@@ -23,6 +23,19 @@ int getSum(int *ptr)
     }
     return ans;
 }
+
+int onlyHalfArraySum(int *ptr)
+{
+    
+    int ans=0;
+
+    for(int i=0;i<3;i++)
+    {
+        ans=ans+ *(ptr+i);
+    }
+    return ans;
+
+}
 int main()
 {
     int x=5;
@@ -36,5 +49,8 @@ int main()
     int *ptr_arr=arr;
     int sum=getSum(ptr_arr);
     cout<<"sum of array -> "<<sum<<"\n";
+
+    int sum1=onlyHalfArraySum(ptr_arr+2); //getting sum from 2nd index
+    cout<<"sum of array -> "<<sum1<<"\n";
 
 }
