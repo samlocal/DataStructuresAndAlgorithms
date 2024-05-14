@@ -3,16 +3,16 @@
 #include<iostream>
 using namespace std;
 
-void sumFrom1toN(int i, int n, int &sum)
+void sumFrom1toN(int i, int sum)
 {
-    if(i>n)
+    if(i<1)
     {
+        cout<<"Sum is "<<sum;
         return;
     }
 
-    sum=sum+i;
 
-    sumFrom1toN(i+1,n,sum);
+    sumFrom1toN(i-1,sum+i);
 
 }
 
@@ -22,11 +22,8 @@ int main()
     cout<<"Enter n : ";
     cin>>n;
 
-    int i=1;
 
-    int sum=0;
+    sumFrom1toN(n , 0);
 
-    sumFrom1toN(i , n , sum);
-
-    cout<<"Sum from 1 to "<<n<<" is "<<sum<<"\n";
+    
 }
