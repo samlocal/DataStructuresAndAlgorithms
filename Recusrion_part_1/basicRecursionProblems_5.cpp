@@ -1,7 +1,8 @@
-//Reversinga an array using recursion
+//Reversinga an array using 
 
 #include<iostream>
 using namespace std;
+/*
 void reverseArray(int start , int end , int arr[])
 {
     if(start>=end) return;
@@ -25,5 +26,36 @@ int main()
 
     for(int i=0;i<n;i++) cout<<arr[i]<<" ";
 
+
+}
+*/
+
+
+
+void reverseArray(int start , int arr[] , int n)
+{
+    if(start>n/2-1)
+    {
+        return;        
+    }
+
+    swap(arr[start] , arr[n-start-1]);
+
+    reverseArray(start+1 , arr , n);
+}
+
+
+int main()
+{
+    int n;
+    cout<<"Enetr n :";
+    cin>>n;
+    int arr[n];
+
+    for(int i=0;i<n;i++) cin>>arr[i];
+
+    reverseArray(0,arr,n);
+
+    for(int i=0;i<n;i++) cout<<arr[i]<<" ";
 
 }
