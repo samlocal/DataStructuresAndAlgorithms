@@ -13,9 +13,9 @@ bool binarySearch(int arr[] , int start , int end , int target)
     if(arr[mid]==target) return true;
 
     //recurssion
-    if(arr[mid] > target) return binarySearch(arr , start , end-1 , target);
+    if(arr[mid] > target) return binarySearch(arr , start , mid-1 , target);
     
-    if(arr[mid] < target) return binarySearch(arr , start+1 ,end ,target);
+    if(arr[mid] < target) return binarySearch(arr , mid+1 ,end ,target);
 }
 
 
