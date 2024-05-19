@@ -1,0 +1,1 @@
+deleteNodeUsingPosition(head,tail,5);
