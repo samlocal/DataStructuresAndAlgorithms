@@ -1,1 +1,4 @@
-deleteNodeUsingPosition(head,tail,5);
+ insertAfterTheParticularData(tail,3,5);
+    // print(tail);
+
+    // cout<<"\n";
