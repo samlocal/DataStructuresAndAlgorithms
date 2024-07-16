@@ -24,6 +24,7 @@
         }
     };
 */
+/*
 BinaryTreeNode<int>* solve(vector<int> &preorder,int min,int max,int &index)
 {
     if((preorder[index]<min || preorder[index]>max)|| index>=preorder.size()) return NULL;
@@ -39,3 +40,4 @@ BinaryTreeNode<int>* preorderToBST(vector<int> &preorder) {
     int index=0;
     return solve(preorder,min,max,index);
 }
+*/
