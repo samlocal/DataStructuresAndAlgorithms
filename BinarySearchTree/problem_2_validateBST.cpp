@@ -18,6 +18,7 @@
     };
 
 *************************************************************/
+/*
 bool isBST(BinaryTreeNode<int> *root,int min,int max)
 {
     //base case
@@ -36,3 +37,4 @@ bool isBST(BinaryTreeNode<int> *root,int min,int max)
 bool validateBST(BinaryTreeNode<int> *root) {
     return isBST(root,INT_MIN,INT_MAX);
 }
+*/
