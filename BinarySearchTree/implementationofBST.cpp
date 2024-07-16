@@ -87,6 +87,21 @@ void takeInput(Node* &root)
     }
 
 }
+int minValue(Node* root)
+{
+    Node* temp=root;
+    while(temp->left!=NULL) temp=temp->left;
+
+    return temp->data;
+}
+
+int maxValue(Node* root)
+{
+    Node* temp=root;
+    while(temp->right!=NULL) temp=temp->right;
+
+    return temp->data;
+}
 int main()
 {
     Node* root=NULL;  //root node
@@ -98,5 +113,11 @@ int main()
     //printing LOT
     cout<<"Printing BST:\n";
     levelOrderTraversal(root);
+
+    //Minimum Value
+    cout<<"Minumum Value : "<<minValue(root)<<"\n";
+
+    //Maximim Value
+    cout<<"Maximum Value : "<<maxValue(root)<<"\n";
     
 }
