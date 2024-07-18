@@ -149,6 +149,7 @@ int main() {
     int tc;
     scanf("%d ", &tc);
     while (tc--) {
+    
         string treeString;
         getline(cin, treeString);
         Solution ob;
