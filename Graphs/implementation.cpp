@@ -3,12 +3,13 @@
 #include <list>
 using namespace std;
 
+template <typename T>
 class graph
 {
 public:
-    unordered_map<int, list<int>> adj;
+    unordered_map<T, list<T>> adj;
 
-    void addEdge(int u, int v, bool direction)
+    void addEdge(T u, T v, bool direction)
     {
         // direction=0 : undiredcted graph
         // direction=1 : directed graph
@@ -35,7 +36,7 @@ public:
 
 int main()
 {
-    graph g;
+    graph<int> g;
     int n;
     cout << "Enter the no of nodes:\n";
     cin >> n;
