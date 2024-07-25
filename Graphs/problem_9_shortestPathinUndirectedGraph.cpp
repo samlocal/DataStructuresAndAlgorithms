@@ -47,9 +47,11 @@
 //     if (!visited[t]) return ans;  // No path from s to t
 
 //     int currNode = t;
-//     while (currNode != -1) {
-//         ans.push_back(currNode);
+// 	ans.push_back(currNode);
+//     while (currNode != s) {
+        
 //         currNode = parent[currNode];
+// 		ans.push_back(currNode);
 //     }
 
 //     // Reverse the answer to get the path from s to t
