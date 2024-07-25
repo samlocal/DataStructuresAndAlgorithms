@@ -2,7 +2,7 @@
 using namespace std;
 bool isCycle(int src,int parent,unordered_map<int,bool>visited,unordered_map<int,list<int>> adjList)
 {
-    visited[src]=true;
+    visited[src]=true ;
 
     for(auto neighbour : adjList[src])
     {
